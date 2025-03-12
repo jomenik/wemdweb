@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEMD Online Store</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="stylp.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+   
+</head>
+<body>
+    <video playsinline autoplay muted loop id="tlo">
+        <source src="./pic/vid.mp4" type="video/mp4">
+    </video>
+    <div class="header">
+        <div class="lewy">
+
+        </div>
+        <a href="index.html">
+        <div class="logo">
+    <model-viewer 
+        id="model" 
+        src="TLm6aDjy.gltf"
+        disable-zoom="" 
+        ar-status="not-presenting"
+
+        tone-mapping="neutral" 
+        poster="poster.webp" 
+        shadow-intensity="1"
+      >
+    </model-viewer>
+
+    
+    </div>
+</a>
+    <div class="prawy">
+            
+    </div>
+    </div>
+
+<div class="pant">
+   
+
+
+    <img class="pants" src="./pic/pant.png">
+    <div class="desc">
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <h1>
+            wemd europe signature pants
+        </h1>
+        <p>
+            350 GSM 100% cotton flared sweatpants
+        </p>
+        <br>
+        <br>
+        <table style="width: 50%">
+          <tr>
+            <td>S</td>
+            <td>M</td>
+            <td>L</td>
+          </tr>
+          <tr>
+            <td>100x50</td>
+            <td>120x50</td>
+            <td>130x60</td>
+          </tr>
+          </table>
+        <a class="btn" type="button" href="store.html">
+            add to cart
+        </a>
+    
+        </div>
+        </div>
+        
+        
+
+
+</div>
+
+</div>
+
+
+
+
+    
+</body>
+</html>
+
+
+
+<script>
+   function getMouse(e){
+        return [
+            Math.round(e.clientX / window.innerWidth * 100),
+            Math.round(e.clientY / window.innerHeight * 100),
+        ]
+    }
+
+    document.onmousemove = function(e){
+        const mouse = getMouse(e);
+        const modelViewer = document.querySelector("model-viewer")
+        modelViewer.cameraOrbit = `${mouse[0] -70 }deg ` + `${mouse[1] + 45}deg `;
+    }
+
+</script>

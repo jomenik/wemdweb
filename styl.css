@@ -1,0 +1,30 @@
+.header {
+height: auto;
+margin-top: 20%;
+
+
+}
+
+body{
+    background-color: black;
+
+}
+.logo {
+    float: left;
+    width: 40%;
+
+}
+.lewy {
+    width: 30%;
+    height: 100px;
+    float: left;
+}
+.prawy{
+    width: 30%;
+    float: left;
+    height: 100px;
+}
+model-viewer {
+    width: 100%;
+}
+

@@ -1,0 +1,99 @@
+.header {
+height: auto;
+
+
+}
+
+body{
+    background-color: black;
+
+}
+.logo {
+    float: left;
+    width: 40%;
+    position: relative;
+}
+.lewy {
+    width: 30%;
+    height: 100px;
+    float: left;
+    position: relative;
+}
+.prawy{
+    width: 30%;
+    float: left;
+    height: 100px;
+    position: relative;
+}
+model-viewer {
+    width: 100%;
+    position: relative;
+}
+
+
+
+.hoodie {
+    width: 50%;
+    float: left;
+    position: relative;
+    scale: 0.7;
+
+}
+
+
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .hoodie:hover {
+    scale: 0.75;
+    transition: 0.2s;
+    position: relative;
+
+  }
+  .desc {
+    float: left;
+    width: 50%;
+    color: white;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-style: normal;
+    text-shadow: black 0px 0px 15px;
+
+
+  }
+
+
+  
+  .btn {
+    background-color: black;
+    float: left;
+    width: 50%;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+  }
+  .btn:hover{
+    scale: 1.05;
+    transition: 0.2s;
+  }
+
+td {
+  text-align: center;
+}
+p {
+  text-transform: uppercase;
+ 
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEMD Online Store</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+   
+</head>
+<body>
+  
+    <div class="header">
+        <div class="lewy">
+
+        </div>
+        <a href="index.html">
+        <div class="logo">
+    <model-viewer 
+        id="model" 
+        src="TLm6aDjy.gltf"
+        disable-zoom="" 
+        ar-status="not-presenting"
+
+        tone-mapping="neutral" 
+        poster="poster.webp" 
+        shadow-intensity="1"
+      >
+    </model-viewer>
+
+    
+    </div>
+</a>
+    <div class="prawy">
+            
+    </div>
+    </div>
+  
+</body>
+</html>
+
+
+
+<script>
+   function getMouse(e){
+        return [
+            Math.round(e.clientX / window.innerWidth * 100),
+            Math.round(e.clientY / window.innerHeight * 100),
+        ]
+    }
+
+    document.onmousemove = function(e){
+        const mouse = getMouse(e);
+        const modelViewer = document.querySelector("model-viewer")
+        modelViewer.cameraOrbit = `${mouse[0] -70 }deg ` + `${mouse[1] + 45}deg `;
+    }
+
+</script>
